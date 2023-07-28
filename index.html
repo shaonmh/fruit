@@ -29,62 +29,166 @@
     </style>
 </head>
 <body>
-    <header class="md:container  md:mx-auto">
-        <div class="navbar bg-base w-10/12 mx-auto rounded-full bg-fruit">
-            <div class="flex justify-center text-white text-sm">
-              <a class="btn btn-ghost normal-case text-base">Home</a>
-              <a class="btn btn-ghost normal-case text-base">About Us</a>
-              <a class="btn btn-ghost normal-case text-base">Shop</a>
-              <a class="btn btn-ghost normal-case text-base">All Fruits</a>
-            </div>
-            <div class="logo flex mx-auto justify-around">
-              <div class="image pr-5"><img src="images/logo.png" alt="logo"></div>
-              <div class="text"><h1 class="text-white text-xl font-semibold " >Fruit Burst</h1></div>
-            </div>
-            <div class="flex-none gap-2">
-              <div class="form-control relative ">
-                <input type="text" placeholder="Search" class="input bg-white input-bordered w-24 md:w-auto rounded-full " />
-                
-                <i class="  fa fa-search cursor-pointer w-8 h-8 absolute top-1/2 transform -translate-y-2 right-3" ></i>
-              </div>
-             
-            </div>
+  <header class="md:container  md:mx-auto">
+    <div class="navbar my-10 bg-base h-20 w-10/12 mx-auto flex justify-center rounded-full bg-fruit">
+        <div class="flex ml-6 justify-center text-white text-sm">
+          <a class="btn btn-ghost normal-case text-base">Home</a>
+          <a class="btn btn-ghost normal-case text-base">About Us</a>
+          <a class="btn btn-ghost normal-case text-base">Shop</a>
+          <a class="btn btn-ghost normal-case text-base">All Fruits</a>
+        </div>
+        <div class="logo flex mx-auto justify-around">
+          <div class="image pr-5"><img src="images/logo.png" alt="logo"></div>
+          <div class="text"><h1 class="text-white text-3xl font-semibold ">Fruit Burst</h1></div>
+        </div>
+        <div class="flex pl-20 pr-10 gap-2">
+          <div class="form-control relative ">
+            <input type="text" placeholder="Search" class="input bg-white input-bordered w-24 md:w-auto rounded-full ">
+            
+            <i class="  fa fa-search cursor-pointer w-8 h-8 absolute top-1/2 transform -translate-y-2 right-3"></i>
           </div>
-    </header>
-    <main>
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="images/banner3.png" class="w-full" />
-          <h1 class="absolute top-1/4 left-1/2 text-white text-xl">Exotic tastes at your doorstep</h1>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="images/banner2.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="images/banner1.png" class="w-full" />
-          
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="images/banner4.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
+         
         </div>
       </div>
-    </main>
+</header>
+<main class="flex-col ">
+  <div class="slider flex relative">
+    <div class=" w-10/12 mx-auto carousel relative">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="images/banner3.png" class="w-full">
+        <div class="ontop bg-black/30  position absolute top-0 left-0 w-full h-full  flex flex-col items-center  ">
+          <h1 class=" pt-20 pb-10 text-center text-white text-7xl font-bold">Exotic tastes at your doorstep</h1>
+          <p class=" pb-10 text-xl text-center text-white">We supply highly quality organic products</p>
+          <button class="btn bg-fruit hover:bg-red-300 border-0 text-white ">Shop Now</button>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="images/banner2.png" class="w-full">
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="images/banner1.png" class="w-full">
+        
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="images/banner4.png" class="w-full">
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex h-48 items-center inset-x-0 justify-around absolute -bottom-24 bg-white mx-auto w-8/12 text-center text-gray-700 ">
+      <div class="flex-col">
+        <img src="images/fruit1.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class="flex-col">
+        <img src="images/fruit1.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class="flex-col">
+        <img src="images/fruit1.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class="flex-col">
+        <img src="images/fruit1.png" alt="">
+        <p>Strawberry</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex-col mt-48 h-48">
+   <div class="flex  mx-auto justify-around ">
+    <div class="count-text w-1/2">
+      <h1>Deal of the day</h1>
+      <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>  
+     </div>
+     <div class="cnt flex">
+      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:15;"></span>
+          </span>
+          days
+        </div> 
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:10;"></span>
+          </span>
+          hours
+        </div> 
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:24;"></span>
+          </span>
+          min
+        </div> 
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:59;"></span>
+          </span>
+          sec
+        </div>
+      </div>
+     </div>
+   </div>
+   <div class="flex my-10 mx-auto w-10/12 gap-3 justify-between">
+    <div class="card w-96 bg-white shadow-xl">
+      <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card w-96 bg-white shadow-xl">
+      <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card w-96 bg-white shadow-xl">
+      <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card w-96 bg-white shadow-xl">
+      <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+   </div>
+  </div>
+  
+</main>
     <footer></footer>
 </body>
 </html>
